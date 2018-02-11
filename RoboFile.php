@@ -11,8 +11,9 @@ class RoboFile extends \Robo\Tasks
 		var_dump(phpinfo());	
 	}
 	private function setup() {
-		if(getenv('SETUP')==='true'){
-			var_dump("*******************************************");
+
+		if(getenv('COVER') === 'true'){
+			var_dump("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%");
 			var_dump("Starting build ...");
 			var_dump("*******************************************");
 		}
